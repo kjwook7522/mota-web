@@ -1,5 +1,9 @@
 <template>
-    <NuxtPage />
+    <NuxtLayout :name="layout">
+        <NuxtPage />
+    </NuxtLayout>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const layout = useLayout();
+</script>
